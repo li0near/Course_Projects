@@ -9,10 +9,8 @@ Implementation of SON algorithm `SON.py` in *Apache Spark* using Python 2.7.
 1. Divide basket file into chunks ,each is the fraction p of the entire file
 2. Treat each chunk as a sample
 3. Run discovery algorithm on the sample
-
-    support threshold = `ps`
-    `s` is the support threshold of entire file (support ratio stays the same in chunks)
-
+  - support threshold = `ps`
+  - `s` is the support threshold of entire file (support ratio stays the same in chunks)
 4. Collect frequent itemsets from each chunk, whick form the candidate itemsets
 5. Make a second pass through baskets
   - Collect counts of candidates
@@ -62,7 +60,7 @@ Given a set of baskets, SON algorithm divides them into chunks/partitions and th
 1,2,3,4,5
 ```
 
-All frequent itemsets are saved into `putput.txt`, each line of which contains one itemset (a list of comma-separated item numbers) with no particular order. For example,
+All frequent itemsets are saved into `output.txt`, each line of which contains one itemset (a list of comma-separated item numbers) with no particular order. For example,
 ```
 4
 1,3,4
