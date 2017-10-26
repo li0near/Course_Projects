@@ -8,16 +8,9 @@ Implementation of SON algorithm `SON.py` in *Apache Spark* using Python 2.7.
 
 1. Divide basket file into chunks ,each is the fraction p of the entire file
 2. Treat each chunk as a sample
-3. Run discovery algorithm on the sample
-
-   support threshold = `ps`  
-   `s` is the support threshold of entire file (support ratio stays the same in chunks)
-
+3. Run discovery algorithm on the sample with support threshold = `ps` where `s` is the support threshold of entire file (support ratio stays the same in chunks)
 4. Collect frequent itemsets from each chunk, whick form the candidate itemsets
-5. Make a second pass through baskets
-
-   Collect counts of candidates  
-   Return frequent itemsets
+5. Make a second pass through baskets to collect counts of candidates and return frequent itemsets
 
 ### Why the second pass?
 
