@@ -5,7 +5,7 @@ Two-phase Matrix Multiplication
 @copyright: Yucheng Guo @ Data Informatics, University of Southern California. All rights reserved.
 @contact:   yuchengg@usc.edu
 @version:   1.0
-@create:    February, 10, 2017
+@create:    February 10, 2017
 '''
 
 import sys
