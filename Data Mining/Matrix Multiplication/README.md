@@ -7,8 +7,8 @@ Implementation of a Spark program in Python 2.7, `TwoPhase.py`, that computes th
 
 | TwoPhase | Phase 1 | Phase 2 |
 |----------|---------|---------|
-| Map | Form key-value pairs with joining value (k) as key<br> `A[i,k] => (k, ('A', i, A[i, k]))`<br> `B[k,j] => (k, ('B', j, B[k, j]))` | Not much to do, just pass it through |
-| Reduce |    centered   | Perform addition of p values that come via an iterator: ((i, j), [v~1~, v~2~, …, v~p~]) => ((i, j), sum([v~1~, v~2~, …, v~p~])) |
+| Map | Form key-value pairs with joining value (k) as key:<br> `A[i,k] => (k, ('A', i, A[i, k]))`<br> `B[k,j] => (k, ('B', j, B[k, j]))` | Not much to do, just pass it through |
+| Reduce |    centered   | Perform addition of p values that come via an iterator:<br> `((i, j), [v<sub>1</sub>, v<sub>2</sub>, …, v<sub>p</sub>]) => ((i, j), sum([v~1~, v~2~, …, v~p~]))` |
 | col 3 is | right-aligned |   $9 |
 
 A(I, K, V) * B(K, J, W): v = A[i, k], w = B[k, j]
