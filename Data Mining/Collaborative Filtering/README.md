@@ -29,9 +29,6 @@ The algorithm should output RMSE after each iteration (remember that the mean is
 2,1,3
 …
 ```
-- n is the number of rows (users) of the matrix, while m is the number of columns (products).
-- f is the number of dimensions/factors in the factor model. That is, U is n-by-f matrix, while V is f-by-m matrix.
-- k is the number of iterations.
 
 After each iteration, output to standard output the RMSE with 4 floating points:
 ```
@@ -47,4 +44,9 @@ The program should be invoked as follows.
 ```
 python uv.py input-matrix n m f k
 ```
+
+- n is the number of rows (users) of the matrix, while m is the number of columns (products).
+- f is the number of dimensions/factors in the factor model. That is, U is n-by-f matrix, while V is f-by-m matrix.
+- k is the number of iterations.
+
 For example, `python uv.py matrix.dat 5 5 2 10`
