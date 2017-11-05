@@ -52,7 +52,7 @@ def rmse(M, P):
                 se += (M[i, j] - P[i, j]) ** 2
     return np.sqrt(se / cnt)
 
-for iter in range(k):
+for _ in range(k):
     for r in range(n):
         for s in range(f):
             U[r, s] = updateU(r, s)
