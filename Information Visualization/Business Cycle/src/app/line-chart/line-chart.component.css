@@ -1,0 +1,54 @@
+/* bar chart */ * >>> .bar { fill: steelblue;
+}
+* >>> .bar:hover { fill: brown;
+}
+
+* >>> .axis--y{
+  fill: none;
+  stroke: #000000;
+  stroke-width: 1;
+}
+* >>> .axis--x{
+  fill: none;
+  stroke: #000000;
+  stroke-width: 1;
+}
+/* Style the lines by removing the fill and applying a stroke */
+
+* >>> .area {
+  fill: #99FFCC;
+
+  stroke-width: 1px;
+  clip-path: url(#clip);
+}
+* >>> .line {
+  fill: none;
+  stroke: #ffab00;
+  stroke-width: 3;
+  clip-path: url(#clip);
+}
+
+
+* >>> .zoom {
+  cursor: move;
+  fill: none;
+  pointer-events: all;
+}
+
+* >>> .overlay {
+  fill: none;
+  pointer-events: all;
+}
+
+* >>> .focus circle {
+  fill: #F1F3F3;
+  stroke: #6F257F;
+  stroke-width: 5px;
+}
+
+* >>> .hover-line {
+  stroke: #6F257F;
+  stroke-width: 2px;
+  stroke-dasharray: 3,3;
+}
+

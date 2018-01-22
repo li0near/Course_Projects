@@ -1,0 +1,41 @@
+year	cycle	value	remark
+1	0	0.4	Business Cycle Start!!
+1	1	0.4	Business Cycle Start!!
+3	1	2	Expansion	
+4	1	3	Expansion	
+4	2	3	Boom
+6	2	4	First Peak of business cycle
+7.5	2	3.2	Depression
+7.5	3	3.2	Depression
+9.5	3	2.3	Depression
+10.7	3	1.8	Depression
+10.7	4	1.8	Resession
+12.5	4	1.5	Resession
+14	4	2.3	Resession
+14	5	2.3	a.k.a. Revival or Recovery
+16	5	4.5	a.k.a. Revival or Recovery
+17	5	6	a.k.a. Revival or Recovery
+17	6	6	a.k.a. Prosperity or Peak
+19	6	7	a.k.a. Prosperity or Peak
+21	6	6	a.k.a. Prosperity or Peak
+21	7	6	a.k.a. Liquidation or Downturn
+23	7	5.3	a.k.a. Liquidation or Downturn
+25	7	4.3	a.k.a. Liquidation or Downturn
+25	8	4.3	a.k.a Contraction or Trough
+26	8	4	a.k.a Contraction or Trough
+28	8	4.8	a.k.a Contraction or Trough
+28	9	4.8	a.k.a Kondratiev wave E: a.k.a. Improvement
+30	9	6.5	a.k.a Kondratiev wave E: a.k.a. Improvement
+32	9	8.5	a.k.a Kondratiev wave E: a.k.a. Improvement
+32	10	8.5	a.k.a Kondratiev wave P: Prosperity
+34	10	10	a.k.a Kondratiev wave P: Prosperity
+35	10	9.4	a.k.a Kondratiev wave P: Prosperity
+35	11	9.4	a.k.a Kondratiev wave R: Recession
+37	11	8	a.k.a Kondratiev wave R: Recession
+39	11	7	a.k.a Kondratiev wave R: Recession
+39	12	7	a.k.a Kondratiev wave D: Depression
+41	12	6.5	a.k.a Kondratiev wave D: Depression
+43	12	8	a.k.a Kondratiev wave D: Depression
+43	13	8	Expansion
+44	13	9	Expansion
+46	13	12	Is this peak now ??

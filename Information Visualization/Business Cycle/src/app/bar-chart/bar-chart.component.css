@@ -1,0 +1,25 @@
+/* bar chart */ * >>> .bar { fill: steelblue;
+}
+* >>> .bar:hover { fill: brown;
+}
+* >>> .axis--y{
+  fill: none;
+  stroke: #000000;
+  stroke-width: 1;
+}
+* >>> .axis--x{
+  fill: none;
+  stroke: #000000;
+  stroke-width: 1;
+}
+
+.line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 2px;
+}
+
+.area {
+  fill: lightsteelblue;
+}
+

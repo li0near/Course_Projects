@@ -1,0 +1,76 @@
+
+0. Clone the latest git project repository into your local project folder
+1. Generate a new app
+$ npm install -g @angular/cli 
+
+1-1. Generate project files and create AngularJS framework for project
+$ cd /Your_local_temp_directory/
+$ ng new business-cycle
+$ cd business-cycle
+$ copy all files/folders to /Your_git_local_project_folder (Except .git folder)
+$ cd /Your_git_local_project_folder
+
+2. Add support for Bootstrap under project folder
+$ npm install bootstrap@next --save
+
+2-1. Install new template into project folder
+$ cd /Your_git_local_project_folder
+$ npm install startbootstrap-agency
+
+3. Add support for D3, related comopoents and create components
+$ npm install --save d3
+$ npm install --save topojson
+$ npm install --save d3-geo-projection
+$ npm install --save d3-scale-chromatic
+$ npm install --save-dev @types/d3 
+$ npm install --save-dev @types/topojson
+**$ npm install d3-tip
+**$ npm install --save @types/d3-tip
+**$ npm install --save d3-simple-slider
+
+**3-1. Pull all project files from git to your local folder
+
+4. Configuring Project to support Bootstrap
+Now that the project is set up it must be configured to include the bootstrap CSS.
+Open the file .angular-cli.json from the root of your project.
+Under the property apps the first item in that array is the default application.
+There is a property styles which allows external global styles to be applied to your application.
+Specify the path to bootstrap.min.css
+It should look like the following when you are done:
+```
+      "styles": [
+        "../node_modules/bootstrap/dist/css/bootstrap.min.css",		
+        "../node_modules/font-awesome/css/font-awesome.min.css",        
+        "../node_modules/startbootstrap-agency/css/agency.min.css",
+        "styles.css"
+      ],
+      "scripts": [
+        "../node_modules/jquery/dist/jquery.min.js",        
+        "../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
+        "../node_modules/jquery.easing/jquery.easing.min.js",      
+        "../node_modules/startbootstrap-agency/js/jqBootstrapValidation.js",
+        "../node_modules/startbootstrap-agency/js/agency.min.js",
+        "../node_modules/d3-tip/index.js"             
+      ],
+
+```
+Note: When you make changes to .angular-cli.json you will need to re-start ng serve to pick up configuration changes.
+
+5. Starting Project, execute below command under project folder
+
+$ npm start
+
+Check your project at http://localhost:4200/
+
+6. All application compoments locate at
+ /Project_folder/src/
+
+7. Data files locate at
+ /Project_folder/src/assets/
+
+7-1. The data file path in your code should be:
+    const data_file = 'assets/world-map.json';
+	
+8. AngularJS supports TypeScript(superset of javascript), you have better to change all your variable declarations from 'var' to either 'const' for a constant or 'let' for a variable.
+Reference url
+https://stackify.com/typescript-vs-javascript-migrate/

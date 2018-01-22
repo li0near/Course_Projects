@@ -1,0 +1,22 @@
+* >>> .g1-color0, * >>> .g2-color0, * >>> .g3-color0, * >>> .g4-color0 {
+    fill: #dd1c77;  
+
+ }
+
+  * >>> .g1-color1, * >>> .g2-color1, * >>> .g3-color1, * >>> .g4-color1 {
+    fill: #5ca747;
+ }
+  
+ * >>> .g1-text, * >>> .g2-text, * >>> .g3-text,* >>> .g4-text {
+    font-family: sans-serif;
+    fill: #dd1c77;
+    font-size: 3.5vw; 
+/*    font-size: 25px; */
+    font-weight: bold;
+ }
+
+ * >>> .g1-label, * >>> .g2-label, * >>> .g3-label, * >>> .g4-label {
+    font-family: sans-serif;
+    font-size: 5vw; 
+/*    font-size: 10px; */
+}

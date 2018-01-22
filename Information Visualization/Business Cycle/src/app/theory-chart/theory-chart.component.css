@@ -1,0 +1,121 @@
+* >>> #theory-chart-svg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+
+* >>> .axis--y{
+    fill: none;
+    stroke: #000000;
+    stroke-width: 1;
+    font: 12px sans-serif;     
+}
+* >>> .axis--x{
+    fill: none;
+    stroke: #000000;   
+    stroke-width: 1px;
+    font: 12px sans-serif;    
+}
+/* Style the lines by removing the fill and applying a stroke */
+* >>> .line {
+    fill: none;
+    stroke: steelblue;
+    stroke-width: 3;
+}
+
+/* Style the dots by assigning a fill and stroke */
+* >>> .dot {
+    fill: #ffab00;
+    stroke: #fff;
+}
+
+* >>> .dot:hover {
+    fill: #ff0000;
+    stroke: #0000;    
+}
+
+* >>> .area0 {
+    fill: #dd1c77;   
+}
+* >>> .area1 {
+    fill: #fff7bc;   
+}
+* >>> .area2 {
+    fill: #aed99b;   
+}
+* >>> .area3 {
+    fill: #fec44f;   
+}
+* >>> .label {   
+    font: 0.8vw sans-serif; 
+}
+
+* >>> .story0 {   
+    font: 2.2vw sans-serif;
+    fill: green ;
+}
+* >>> .story1, * >>>.story2, * >>>.story3, * >>>.story4, * >>>.story5, * >>>.story6 {   
+    font: 1.2vw sans-serif;
+}
+/* Override default theme style */
+* >>> .timeline-image {
+    border: 0;
+}
+
+/* Tooltip CSS */
+* >>> .d3-tip {
+    line-height: 1.5;
+    font-weight: 400;
+    font-family:"avenir next", Arial, sans-serif;
+    padding: 6px;
+    background: rgba(0, 0, 0, 0.6);
+    color: #FFA500;
+    border-radius: 1px;
+    pointer-events: none;
+}
+
+/* Creates a small triangle extender for the tooltip */
+* >>> .d3-tip:after {      
+    box-sizing: border-box;
+    display: inline;
+    font-size: 8px;
+    width: 100%;
+    line-height: 1.5;
+    color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    pointer-events: none;
+}
+
+/* Northward tooltips */
+* >>> .d3-tip.n:after {
+    content: "\25BC";
+    margin: -1px 0 0 0;
+    top: 100%;
+    left: 0;
+    text-align: center;
+}
+
+/* Eastward tooltips */
+* >>> .d3-tip.e:after {
+    content: "\25C0";
+    margin: -4px 0 0 0;
+    top: 50%;
+    left: -8px;
+}
+
+/* Southward tooltips */
+* >>> .d3-tip.s:after {
+    content: "\25B2";
+    margin: 0 0 1px 0;
+    top: -8px;
+    left: 0;
+    text-align: center;
+}
+
+/* Westward tooltips */
+* >>> .d3-tip.w:after {
+    content: "\25B6";
+    margin: -4px 0 0 -1px;
+    top: 50%;
+    left: 100%;
+}
