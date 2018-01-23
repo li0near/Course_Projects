@@ -12,7 +12,9 @@ A demo of the application website is provided [here](http://www-scf.usc.edu/~yuc
 You can also download the build artifacts from [this folder](https://github.com/li0near/Course_Projects/tree/master/Information%20Visualization/Business%20Cycle/deliverables/build) and deploy the web application yourself.
 
 **Note:** If you are opening *index.html* directly from PC, the use of [Browsersync](https://browsersync.io) is strongly recommended. Should you insist on opening the application with a browser, make sure you use Firefox or Microsoft Edge or start Chrome with the following command to lift the data file access security restrictions:
-`chrome.exe --allow-file-access-from-files`
+```
+chrome.exe --allow-file-access-from-files
+```
 
 ## Videoand
 
