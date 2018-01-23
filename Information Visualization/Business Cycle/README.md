@@ -41,7 +41,7 @@ The presentation file can be access via [this link.](https://github.com/li0near/
 2. MSCI index country membership tool - [https://www.msci.com/index-country-membership-tool](https://www.msci.com/index-country-membership-tool)
 3. S&P 500 index historical data, Yahoo Finance - [Monthly data from year Jan., 1950 ~ Oct., 2017](https://finance.yahoo.com/quote/%5EGSPC/history?period1=-630950400&period2=1508137200&interval=1mo&filter=history&frequency=1mo)
 4. D3-timeseries - [http://mcaule.github.io/d3-timeseries/](http://mcaule.github.io/d3-timeseries/)
-5. Angular JS: https://angular.io/
-6. Bootstrap http://getbootstrap.com/
-7. TypeScript https://www.typescriptlang.org/index.html
-8. Tulip mania, wikipedia, https://en.wikipedia.org/wiki/Tulip_mania
+5. Angular JS - https://angular.io/
+6. Bootstrap - http://getbootstrap.com/
+7. TypeScript - https://www.typescriptlang.org/index.html
+8. Tulip mania, wikipedia - https://en.wikipedia.org/wiki/Tulip_mania
