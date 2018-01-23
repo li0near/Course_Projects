@@ -16,7 +16,7 @@ You can also download the build artifacts from [this folder](https://github.com/
 chrome.exe --allow-file-access-from-files
 ```
 
-## Videoand
+## Video
 
 The demo video can be accessed via [this link.](https://youtu.be/nMmFjM_RaqQ)
 
