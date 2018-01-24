@@ -6,7 +6,7 @@ Implementation of [LSH](https://en.wikipedia.org/wiki/Locality-sensitive_hashing
 
 Suppose there are 100 different movies, numbered from 0 to 99. Each user is represented as a set of movies. *Jaccard coefficient* is used to measure the similarity of sets.
 
-- Apply [MinHash](https://en.wikipedia.org/wiki/MinHash) to obtain a signature of 20 values for each user, which is acomplished by “logically” permuting the rows of characteristic matrix of the movie-user matrix (i.e., row are movies and columns represent users).
+- Apply [MinHash](https://en.wikipedia.org/wiki/MinHash) to obtain a signature of 20 values for each user, which is acomplished by “logically” permuting the rows of characteristic matrix of the movie-user matrix (i.e., rows are movies and columns represent users).
 
 - Assume that the i-th hash function for the signature is `h(x,i) = (3x + 13i) % 100`, where `x` is the original row number in the matrix.
 
