@@ -25,7 +25,7 @@ Consider the map of Mainland Australia. Two players take turns at coloring the s
 In the following, we will start from an initial assignment in which *Player 1* colored the state WA red (dotted fill below) and **Player 2** colored the state SA green (solid fill below). After these two assignments, there remain the states NT, Q, NSW, and V to be colored since they are the neighboring states of the current assigned states WA and SA. *Player 1* could now choose any one of these states to assign a color such that is is consistent with the map coloring(adjecent nodes could not have the same color). A good move could be color state Q red because red is *Player 1*’s top preference and this assignment is consistent with the map coloring. A drawback of this assignment could be that in the future, states NT and NSW must be colored blue which does not yield any utility for *Player 1*, but the maximum utility (8) for **Player 2**.
 *Player 1* and *2* continue to take turns until no states can be assigned anymore, i.e. all states neighboring the currently assigned states are colored. To compute the utility, the following terminal evaluation function is used:
 
-![alt text](https://github.com/ "Figure 1")
+![alt text](https://github.com/li0near/Course_Projects/blob/master/Artificial%20Intelligence/Game%20Strategy/Figure1.png "Figure 1")
 
 The terminal evaluation for *Player 1* in the left leaf of the game tree in *Figure 1* is: 
 ```
