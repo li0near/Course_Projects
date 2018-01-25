@@ -7,8 +7,8 @@ Combining [arc-consistency](https://en.wikipedia.org/wiki/Local_consistency) and
 ## Description
 
 **The map coloring game obeys the following rules:**
-1. There are two players, *Player 1* and the opponent **Player 2**. Each player takes
-turns as in chess or tic-tac-toe. That is, *Player 1* takes a move to color a node, then **Player 2**, then back to *Player 1* and so forth. In the game, assuming *Player 1* will always start first (i.e. *Player 1* is the MAX player, **Player 2** is the MIN player).
+1. There are two players, *Player 1* and the opponent *Player 2*. Each player takes
+turns as in chess or tic-tac-toe. That is, *Player 1* takes a move to color a node, then *Player 2*, then back to *Player 1* and so forth. In the game, assuming *Player 1* will always start first (i.e. *Player 1* is the MAX player, *Player 2* is the MIN player).
 2. The players can only color neighbors of nodes that have already been colored in the map. Adjacent nodes could not have the same color.
 3. The score of each player is defined as the total sum of weights of their colored nodes.
 4. The terminal state of the game is that no more nodes could be colored in the map based on rule 2. It could be either all nodes in the map have been colored, or no possible assignment could be made according to rule 2.
@@ -20,9 +20,9 @@ turns as in chess or tic-tac-toe. That is, *Player 1* takes a move to color a no
 
 ### Example
 
-Consider the map of Mainland Australia. Two players take turns at coloring the states by maintaining the map coloring consistency, i.e. neighboring states must have different colors. Define **red (R)**, **green (G)** and **blue (B)** as the possible colors both players can use. The two players have different preferences for colors which are specified by giving weights to these colors. In the following, *Player 1* has the weights **10**, **5** and **0** for the colors **R**, **G** and **B**, respectively. This means, *Player 1* prefers to assign red (10) over blue (5). **Player 2** has the weights **0**, **2** and **8** for colors **R**, **G** and **B**.
+Consider the map of Mainland Australia. Two players take turns at coloring the states by maintaining the map coloring consistency, i.e. neighboring states must have different colors. Define **red (R)**, **green (G)** and **blue (B)** as the possible colors both players can use. The two players have different preferences for colors which are specified by giving weights to these colors. In the following, *Player 1* has the weights **10**, **5** and **0** for the colors **R**, **G** and **B**, respectively. This means, *Player 1* prefers to assign red (10) over blue (5). *Player 2* has the weights **0**, **2** and **8** for colors **R**, **G** and **B**.
 
-In the following, we will start from an initial assignment in which *Player 1* colored the state WA red (dotted fill below) and **Player 2** colored the state SA green (solid fill below). After these two assignments, there remain the states NT, Q, NSW, and V to be colored since they are the neighboring states of the current assigned states WA and SA. *Player 1* could now choose any one of these states to assign a color such that is is consistent with the map coloring(adjecent nodes could not have the same color). A good move could be color state Q red because red is *Player 1*’s top preference and this assignment is consistent with the map coloring. A drawback of this assignment could be that in the future, states NT and NSW must be colored blue which does not yield any utility for *Player 1*, but the maximum utility (8) for **Player 2**.
+In the following, we will start from an initial assignment in which *Player 1* colored the state WA red (dotted fill below) and *Player 2* colored the state SA green (solid fill below). After these two assignments, there remain the states NT, Q, NSW, and V to be colored since they are the neighboring states of the current assigned states WA and SA. *Player 1* could now choose any one of these states to assign a color such that is is consistent with the map coloring(adjecent nodes could not have the same color). A good move could be color state Q red because red is *Player 1*’s top preference and this assignment is consistent with the map coloring. A drawback of this assignment could be that in the future, states NT and NSW must be colored blue which does not yield any utility for *Player 1*, but the maximum utility (8) for *Player 2*.
 *Player 1* and *2* continue to take turns until no states can be assigned anymore, i.e. all states neighboring the currently assigned states are colored. To compute the utility, the following terminal evaluation function is used:
 
 ![alt text](https://github.com/li0near/Course_Projects/blob/master/Artificial%20Intelligence/Game%20Strategy/Figure1.png "Figure 1")
@@ -58,9 +58,9 @@ V: SA, NSW
 ```
 
 1. The first line of the input are the possible colors. Colors can be strings (one or more characters) consisting of only alphabetical characters `[a-zA-Z]`.
-2. The second line shows the initial map coloring by the two players. For example, in the input file above, `WA: R-1, SA: G-2` means state WA was assigned color ‘R’ by *Player 1*, state SA was assigned color ‘G’ by **Player 2**. There can only be integers **1** or **2**, indicating *Player 1* or *2*.
+2. The second line shows the initial map coloring by the two players. For example, in the input file above, `WA: R-1, SA: G-2` means state WA was assigned color ‘R’ by *Player 1*, state SA was assigned color ‘G’ by *Player 2*. There can only be integers **1** or **2**, indicating *Player 1* or *2*.
 3. The third line is the maximum depth (integer) of the game search tree. The root has depth 0.
-4. The fourth and the fifth lines specify the preferences of *Player 1* and **Player 2**, respectively. For example, `R: 10, G: 5, B: 0` in line four means player one has preferences **10**, **5**, **0** to assign colors **R**, **G**, **B**, respectively. The higher the value, the higher is the preference to use this color for an assignment. The numbers are integers.
+4. The fourth and the fifth lines specify the preferences of *Player 1* and *Player 2*, respectively. For example, `R: 10, G: 5, B: 0` in line four means player one has preferences **10**, **5**, **0** to assign colors **R**, **G**, **B**, respectively. The higher the value, the higher is the preference to use this color for an assignment. The numbers are integers.
 5. The rest of lines represent the graph, for example, `SA: WA, NT, Q, NSW, V` means that state SA has 5 neighbors: WA, NT, Q, NSW, and V.
 
 **Note:** Node names (i.e. states on the map) can be any strings consisting of only alphanumerical characters `[a-zA-Z0-9]`. All test cases follow the same format, including the placement of whitespace and new-line characters.
